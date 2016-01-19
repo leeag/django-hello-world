@@ -14,9 +14,10 @@ from django.test.client import Client
 class SimpleTest(TestCase):
     def test_basic_addition(self):
         """
-        Tests that 1 + 1 always equals 2.
+        Tests that 1 + 1 always equals 2 and 1 + 3 = 4.
         """
         self.assertEqual(1 + 1, 2)
+        self.assertEqual(1 + 3, 4)
 
 
 class HttpTest(TestCase):
